@@ -69,7 +69,7 @@ header nav a {
 header nav a.active,
 header nav a:hover {
   color:var(--white);
-  background:var(--green);
+  background:var(--blue);
 }
 
 header .icons a,
@@ -87,7 +87,7 @@ header .icons i {
 
 header .icons a:hover,
 header .icons i:hover {
-  background:var(--green);
+  background:var(--blue);
   color:var(--white);
   transform: rotate(360deg);
 }
@@ -117,29 +117,51 @@ header .icons #menu-bars {
   }
 }
 
-@media (max-width: 991px){
+@media (max-width: 768px){
   header {
     .icons #menu-bars{
-      display:block;
+      display:inline-block;
     }
+  
+    .navbar {
+      position:absolute;
+      left:0;
+      right:0;
+      top:100%;
+      border-top:1px solid #ccc;
+      clip-path: polygon(0 0,100% 0, 100% 0, 0 0);
+    }  
+
+    .navbar.active {
+      clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);
+      background-color:#e3e6ed;
+    }  
+
+    .navbar a {
+      display:block;
+      margin: 1rem;
+      padding:1rem;
+      font-size:2rem;
+    }  
+}
+
+@media (max-width: 768px){
+  html {
+  font-size:50%;
 }
   header {
-    padding:1rem 2rem;
+    padding:1rem 2.5rem;
   }
 }
 
-@media (max-width: 991px){
-  header {
-    .icons #search-icon, #heart, #cart {
-      display:none;
-    }
+@media (max-width: 345px){
+  html {
+  font-size:45%;
 }
   header {
-    padding:1rem 2rem;
-  }
-  header {
-    .navbar {
+    .icons #heart{
       display:none;
     }
   }
 }
+
