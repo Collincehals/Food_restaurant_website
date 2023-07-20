@@ -5,9 +5,11 @@
     <link rel="icon" type="image/svg" href="/static/restlogo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet"  href="/static/styles.css">
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <script src="https://kit.fontawesome.com/fbd3b48644.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet"  href="/static/styles.css">
   </head>
   
 <body>
@@ -37,9 +39,9 @@
 
 <!---Home section starts here --->
 <section class="home" id="home">
-  <div class="home-slider">
-   <div class="wrapper">
-     <div class="slide">
+  <div class="swiper mySwiper home-slider">
+   <div class="swiper-wrapper wrapper">
+     <div class="swiper-slide slide">
         <div class="content">
           <span>Our Special Dish</span>
           <h3>Delicious Noodles</h3>
@@ -50,7 +52,7 @@
          <img src="/static/home-img-1.png">
        </div>
      </div>
-     <div class="slide">
+     <div class="swiper-slide slide">
         <div class="content">
           <span>Our Special Dish</span>
           <h3>Hot Pizza</h3>
@@ -61,7 +63,7 @@
          <img src="/static/home-img-3.png">
        </div>
      </div>
-     <div class="slide">
+     <div class="swiper-slide slide">
         <div class="content">
           <span>Our Special Dish</span>
           <h3>Fried Chicken </h3>
@@ -73,10 +75,12 @@
        </div>
      </div>
    </div>
+    <div class="swiper-pagination"></div>
   </div> 
 </section>  
 <!---Home section ends here ---> 
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>
 </html>
 
