@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&display=swap');
+
+* {
+  font-family: 'Nunito Sans', sans-serif;
+  box-sizing:border-box;
+  outline:none;border:none;
+  text-decoration:none;
+  margin:0px; padding:0px;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+html {
+  scroll-padding-top:10px;
+  scroll-behavior:smooth;
+  overflow-x:hidden;
+  font-size:62.5%;
+}
+
+:root {
+  --white:#fff;
+  --black:#1f1e1e;
+  --blue:#0b32f4;
+  --red:#f31212;
+  --green:#17d92d;
+  --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+/* Width and color of the scrollbar track */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to top, #2c0a8a, #c80476);  
+  border-radius: 5px;
+}
+/*END */
+
+header {
+  position:fixed;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:1000;
+  right:0;left:0;top:0;
+  background-color:var(--white);
+  padding:20px;
+  box-shadow:var(--box-shadow);
+}
+
+header .logo {
+  font-size:2.5rem;
+  color:var(--black);
+}
+
+header i {
+  margin-right:15px;
+  color:var(--blue);
+}
+
+header nav a {
+  font-size:1.7rem;
+  color:var(--black);
+  padding:.5rem 1.5rem;
+  border-radius:.5rem;
+}
+header nav a.active,
+header nav a:hover {
+  color:var(--white);
+  background:var(--green);
+}
+
+header .icons a,
+header .icons i {
+  background:#eee;
+  font-size:1.7rem;
+  height:4.5rem;
+  width:4.5rem;
+  line-height:4.5rem;
+  margin-left:.5rem;
+  color:var(--black);
+  text-align:center;
+  border-radius:30%;
+}
+
+header .icons a:hover,
+header .icons i:hover {
+  background:var(--green);
+  color:var(--white);
+  transform: rotate(360deg);
+}
+
+header .icons #menu-bars {
+  display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+@media (max-width: 991px){
+  html {
+  font-size:55%;
+}
+  header {
+    padding:1rem 2rem;
+  }
+}
+
+@media (max-width: 991px){
+  header {
+    .icons #menu-bars{
+      display:block;
+    }
+}
+  header {
+    padding:1rem 2rem;
+  }
+}
+
+@media (max-width: 991px){
+  header {
+    .icons #search-icon, #heart, #cart {
+      display:none;
+    }
+}
+  header {
+    padding:1rem 2rem;
+  }
+  header {
+    .navbar {
+      display:none;
+    }
+  }
+}
