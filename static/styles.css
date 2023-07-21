@@ -380,7 +380,7 @@ header .icons #menu-bars {
   line-height:4rem;  
   background:white;
   text-align:center;
-  z-index:1001;
+  z-index:200;
   
 }
 .menu .menu-container .card .fa-heart:hover {
@@ -496,11 +496,54 @@ header .icons #menu-bars {
   border-color:#1306cb;
   box-shadow:var(--box-shadow);
 }
-
 /* Order Section Styles end here */
 
+/* Footer Section Styles start here */
+.footer .box-container {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(23rem, 1fr));
+  gap:1.5rem;
+  justify-content:center;
+}
+.footer .box-container .box {
+  font-size:1.7rem;
+  padding:.5rem 0;
+}
 
+.footer .box-container .box h3 {
+  display:block;
+  font-size:1.7rem;
+  padding:.5rem 0;
+  color:black;
+  font-weight:bolder;
+}
 
+.footer .box-container .box a {
+  display:block;
+  position:relative;
+  font-size:1.5rem;
+  padding:.5rem 0;
+  color:darkblue;
+}
+
+.footer .box-container .box a:hover {
+  color: blue;
+  transform: translateX(1rem);
+}
+.footer .credits {
+  font-size:2rem;
+  color:blue;
+  padding-top:1.5rem;
+  padding-bottom:1.5rem;
+  border-top: .1rem solid #ccc;
+  margin-top:1.5rem;
+  margin-bottom:1.5rem;
+  text-align:center;
+}
+.footer .credits span {
+  color:#97660c;
+}
+/* Footer Section Styles end here */
 
 
 

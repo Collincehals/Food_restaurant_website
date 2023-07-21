@@ -42,7 +42,7 @@ var swiper = new Swiper(".review-container", {
          768:{
           slidesPerView: 2,
         },
-         1024:{
+         1025:{
           slidesPerView: 3,
         },
       },
