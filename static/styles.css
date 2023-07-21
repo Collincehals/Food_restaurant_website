@@ -389,6 +389,7 @@ header .icons #menu-bars {
   color:white;
 }
 
+/* Review Section Styles start here */
 .review {
   padding:7rem 9%;
 }
@@ -436,10 +437,67 @@ header .icons #menu-bars {
   color:black;
   padding:1rem;
 }
+/* Review Section Styles end here */
 
 
+/* Order Section Styles start here */
+.order form {
+  max-width:120rem;
+  width:100%;
+  margin:0 auto;
+  background:white;
+  padding:1.5rem;
+  box-shadow:var(--box-shadow);
+  border:.1rem solid #ccc;
+  border-radius:1.5rem;
+}
 
+.order form .input-box  {
+  padding:2rem;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between; 
+}
+.order form .btn  {
+  margin-left:2rem;
+  margin-bottom:2rem;
+}
 
+.order form .input-box .input {
+  width:49%;
+}
+
+.order form .input-box .input span {
+  font-size:1.7rem;
+  color:black;
+  display:block;
+  font-weight:500;
+  padding-bottom:1rem;
+}
+.order form .input-box .input input {
+  border:.1rem solid #ccc;
+  border-radius:.7rem;
+  padding:1.5rem;
+  width:100%;
+  background:rgba(240,245,255,0.7);
+}
+.order form .input-box .input textarea {
+  width:100%;
+  padding:1.5rem;
+  background:rgba(240,245,255,0.7);
+  border:.1rem solid #ccc;
+  border-radius:.7rem;
+  resize:none;
+  height:12rem;
+}
+
+.order form .input-box .input input:focus,
+.order form .input-box .input textarea:focus {
+  border-color:#1306cb;
+  box-shadow:var(--box-shadow);
+}
+
+/* Order Section Styles end here */
 
 
 
@@ -473,6 +531,15 @@ header .icons #menu-bars {
   height:auto;
 } 
 }
+@media (max-width: 450px){
+  html {
+  font-size:50%;
+}
+  .order form .input-box .input {
+  width:100%;
+}
+}
+
 
 @media (max-width: 768px){
   header {
