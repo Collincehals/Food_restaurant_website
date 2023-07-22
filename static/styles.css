@@ -117,34 +117,35 @@ header .icons #menu-bars {
 }
 
 header .search-form {
-  position:absolute;
-  right:-110%;
-  top:110%;
-  width:45rem;
-  height:5rem;
+  position:fixed;
+  top:-110%;
+  left:0;
+  width:100%;
+  height:100%;
   align-items:center;
   justify-content:center;
   display:flex;
-  background:rgba(240,250,255,0.9);
-  box-shadow:var(--box-shadow);
-  border-radius:1.5rem;
+  background:rgba(0,0,0,.9);
+  z-index:1004;
 }
 header .search-form.active {
-  right:2rem;
+  top:0;
   transition: .4s linear;
 } 
 
 header .search-form input {
-  padding:0 2rem;
-  width:100%;
-  height:100%;
+  padding:1rem 2rem;
+  width:45rem;
+  height:5rem;
   font-size:1.7rem;
-  outline:none;
+  border-bottom:.5rem solid #ccc;
+  color:white;
   background:none;  
 }
 
 header .search-form #search-icon {
   padding-right:2.2rem;
+  color:white;
   cursor:pointer;
   font-size:2.2rem;  
 }
@@ -153,9 +154,21 @@ header .search-form #search-icon:hover {
   color:darkorange;  
 }
 
+header .search-form #close-btn {
+  position:absolute;
+  top:5%;
+  right:3rem;
+  color:white;
+  font-size:4rem;
+}
+header .search-form #close-btn:hover {
+  color:#f50f0f;
+}
+
 
 .home .home-slider .slide {
   display:flex;
+  cursor:pointer;
   align-items:center; 
   flex-wrap:wrap;
   gap:2rem;
@@ -436,6 +449,7 @@ header .search-form #search-icon:hover {
   box-shadow:var(--box-shadow);
   position:relative;
   gap:1.5rem;
+  cursor:pointer;
   padding:2rem;
   border:.1rem solid #ccc;
   border-radius:1.2rem;
@@ -579,14 +593,35 @@ header .search-form #search-icon:hover {
   text-align:center;
 }
 .footer .credits span {
-  color:#97660c;
+  color:darkorange;
+  font-weight:bolder;
 }
 /* Footer Section Styles end here */
 
+/* Loader Section Styles start here */
+.loader-container {
+  position:fixed;
+  background:#fff;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:10000;
+  justify-content:center;
+  align-items:center;
+  display:flex;
+  overflow:hidden;
+}
 
+.loader-container img {
+  width:20rem;
+}
 
-
-
+.loader-container.fade-out {
+  top:-110%;
+  opacity:0;
+}
+/* Loader Section Styles end here */
 
 
 
@@ -640,6 +675,7 @@ header .search-form #search-icon:hover {
     .navbar.active {
       clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);
       background-color:#e3e6ed;
+      transition:.2s linear;
     }  
 
     .navbar a {
@@ -674,9 +710,9 @@ header .search-form #search-icon:hover {
 }
 
 @media (max-width:420px){
-  header .search-form {
-  top:110%;
-  width:90%;
-  height:5rem;
+  header .search-form.active  {
+   #search-box{
+     width:70%;
+   } 
+  }
 }
-
