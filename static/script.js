@@ -6,9 +6,10 @@ menu.onclick = () =>{
   navbar.classList.toggle('active');
 }
 
-let searchForm= document.querySelector('.search-form');
+let searchForm = document.querySelector('.search-form');
+let searchicon = document.querySelector('#search-icon');
 
-document.querySelector('#search-icon').onclick=() => {
+searchicon.onclick=() => {
   searchForm.classList.toggle('active');
 }
 

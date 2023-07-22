@@ -673,3 +673,10 @@ header .search-form #search-icon:hover {
   }
 }
 
+@media (max-width:420px){
+  header .search-form {
+  top:110%;
+  width:90%;
+  height:5rem;
+}
+
