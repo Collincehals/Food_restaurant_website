@@ -6,6 +6,15 @@ menu.onclick = () =>{
   navbar.classList.toggle('active');
 }
 
+let searchForm= document.querySelector('.search-form');
+
+document.querySelector('#search-icon').onclick=() => {
+  searchForm.classList.toggle('active');
+}
+
+
+
+
 var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
       centeredSlides: true,
