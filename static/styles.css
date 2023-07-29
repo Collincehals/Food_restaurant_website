@@ -676,9 +676,12 @@ header .search-form #close-btn:hover {
     .navbar {
       position:absolute;
       left:0;
+      display:grid;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
       right:0;
-      top:100%;
-      border-top:1px solid #ccc;
+      top:0;
       clip-path: polygon(0 0,100% 0, 100% 0, 0 0);
     }  
 
@@ -687,11 +690,13 @@ header .search-form #close-btn:hover {
       background-color:#e3e6ed;
       transition:.2s linear;
     }  
+    navbar {
+    margin-left:.5rem;
+    }
 
     .navbar a {
       display:block;
-      margin: 1rem;
-      padding:1rem;
+      padding:.5rem;
       font-size:2rem;
     }  
 }
@@ -701,7 +706,7 @@ header .search-form #close-btn:hover {
   font-size:50%;
 }
   header {
-    padding:1rem 2.5rem;
+    padding:1.3rem 1.5rem;
   }
   .home .home-slider .slide .content h3{
   font-size:5rem;
