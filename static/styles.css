@@ -6,8 +6,7 @@
   outline:none;border:none;
   text-decoration:none;
   margin:0px; padding:0px;
-  text-transform: capitalize;
-  transition: all .1s linear;
+  transition: all .2s linear;
 }
 html {
   scroll-padding-top:10px;
@@ -300,26 +299,8 @@ header .search-form #close-btn:hover {
 }
 .about .about-container .image {
   flex: 1 1 45rem;
-  animation: waffle 4.5s linear infinite alternate;
-  box-shadow: 0 0px 5px rgba(47, 76, 57, 0.3);
 }
 
-@keyframes waffle {
-    0% {
-        border-radius: 48% 52% 57% 43% / 34% 44% 56% 66%;
-    }
-    25% {
-        border-radius: 62% 38% 64% 36% / 34% 55% 45% 66%;
-    }
-    50% {
-        border-radius: 43% 57% 51% 49% / 33% 42% 58% 67%;
-    }
-    100% {
-        border-radius: 40% 60% 43% 57% / 52% 32% 68% 48%;
-    }
-}
-  
-}
 .about .about-container .content {
   flex: 1 1 45rem;
 }

@@ -62,10 +62,10 @@ var swiper = new Swiper(".mySwiper", {
     });
 
 var swiper = new Swiper(".review-container", {
-      spaceBetween: 30,
+      spaceBetween: 20,
       centeredSlides: true,
       autoplay: {
-        delay: 5000,
+        delay: 3000,
         disableOnInteraction: false,
       },
       pagination: {
