@@ -1,2 +1,2 @@
 # Food_restaurant_website
-A food website ofeering online ordering of food.
+A food website offering online food ordering and delivery.
